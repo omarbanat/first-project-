@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow-y: hidden;/*Disable vertical scrolling only*/
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+      "navbar navbar"
+      "content content"
+      "footer footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+  position: relative;
+}
+/*navabar*/
+.navbar {
+  grid-area: navbar;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000f1;
+  padding: 10px 20px;
+  border: 1px solid #FFD861; /* Add a border */
+  width: auto;
+}
+
+.logo {
+  max-width: 83px;
+  margin-left: -36px;
+  min-height: 61px;
+}
+
+.nav-links {
+  list-style: none;
+  font-size: 29px;
+  display: flex;
+  padding: 0;/* Reset padding */
+  margin: 0; /* Reset margin */
+  background: linear-gradient(to right, #FFD861, #E8C458, #99823A); /* Gradient with three colors */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make text fill color transparent */
+  text-align: center; /* Center the text */
+ 
+}
+
+.nav-links li {
+  margin: 0 20px; /* Adjust padding for horizontal spacing */
+}
+
+/*.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}*/
+
+.a-nav:hover{
+  font-size: 18px;
+  
+  color: blue;
+}
+/*text*/
+.content {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.text-home{
+  margin-left: 15%;
+}
+
+.content h1 {
+  font-family: "Inspiration", cursive;
+  font-size: 4em;
+  margin: 117px;
+  margin-right: 634px;
+  margin-top: 0%;
+  margin-bottom: -76px; 
+} 
+
+
+.content p {
+  font-family: "Inter", sans-serif;
+  font-size: 3em; /* Increased font size */
+  margin: 1% -22%; /* Adjusted margins to move text more to the left */
+  margin-left: -22%; 
+  margin-top: 50px;
+  color: #E9E9C9;
+  max-width: 90%; /* Optional: Set a maximum width to prevent stretching */
+}
+
+  h1 {
+  
+    align-items: center; /* Aligns items vertically in the center */
+}
+
+.q {
+    color: #FAD76C; /* Example color */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Example shadow */
+    margin-right: 0.1em; /* Optional: add a small space between Q and amar */
+}
+
+span{
+  margin-right: 8px; /* Remove right margin */
+  margin-left: -57px; /* Remove left margin */
+  font-size: 2.5em;
+}
+
+
+  /*img*/
+.image-container {
+  position: absolute;/*to be able to move it*/
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%); /* moves the element along the Y-axis */
+}
+
+.image-container img {
+  max-width: 558px;
+  min-height: 392px;
+  margin-bottom: -123px;
+}
+
+
+/*sidebar*/
+.sidebar {
+  grid-area: sidebar; /* Ensure it uses the sidebar area if needed */
+  position: absolute; /* Position it absolutely */
+  bottom: 0; /* Align to the bottom */
+  left: 0; /* Align to the left */
+  display: flex; /* Use flexbox to arrange items */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 19px; /* Optional: Add some padding */
+  margin-bottom: 26px;
+}
+
+.sidebar a {
+ /*width: 40px; /* Set a fixed width */
+  /*height: 40px; /* Set a fixed height */
+  max-width: 121px; 
+  min-height: 210px;
+  margin-bottom: -175px; /* Add space between icons */
+  margin-left: -19px;
+padding: 6px;
+}
+
+.icons{
+    display: inline-block; /* Ensure they are inline-block */
+    margin-bottom: 5px; /* Adjust this value to reduce space */
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+}
+

@@ -1,0 +1,121 @@
+body{
+    background-color: black;
+    position: relative;
+}
+/*header*/
+header {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically center */
+    justify-content: space-between; /* Space between logo and nav links */
+    border: 1px solid #FFD861; /* Add a border */
+    width: 100%;
+    height: 70px;
+}
+
+.ul-nav-links {
+    display: flex; /* Change to flex for better alignment */
+    list-style: none; /* Remove default list styling */
+    font-size: 29px;
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    background: linear-gradient(to right, #FFD861, #E8C458, #99823A); /* Gradient with three colors */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make text fill color transparent */
+    text-align: center; /* Center the text */
+}
+
+.li-nava {
+    padding: 0 20px; /* Adjust padding for horizontal spacing */
+    font-family: "Inter", serif;
+}
+
+.logo{
+    width: 75px; 
+    height: 61px;
+    margin-left: -1%;
+}
+
+.a-nav{
+    text-decoration: none;
+}
+
+.a-nav:hover{
+   font-size: 18px;
+}
+
+/*img*/
+.img-proj{
+    width: 26%;
+    height: auto;
+    position: absolute;
+    bottom:-270px /*-474px*/;
+    left: -3px;
+}
+
+/*project */
+
+.project-section{
+    display: flex;
+    margin: 1%;
+    margin-left: 8%;
+}
+/*p1*/
+.project-materials{
+    overflow: auto;
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    float: right;
+    margin: inherit;
+    margin-top: 2%;
+    width: 24%;
+    height: 254px;
+
+}
+.project-materials-p1{
+background-image: url("../img/box-removebg-preview.png");
+background-repeat: no-repeat;
+width: 101% ;
+height: 356px;
+margin-top: -10%;
+margin-left: -12px;
+}
+
+/*p2*/
+.project-materials-2{
+    margin: auto;
+    overflow: auto;
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    margin-top: 2%;
+    width: 24%;
+    height: 254px;
+
+}
+.project-materials-p2{
+background-image: url("../img/box-removebg-preview.png");
+background-repeat: no-repeat;
+width: 101% ;
+height: 356px;
+margin-top: -10%;
+margin-left: -12px;
+}
+
+/*p3*/
+.project-materials-3{
+    margin: auto;
+    overflow: auto;
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    margin-top: 2%;
+    width: 24%;
+    height: 254px;
+
+}
+.project-materials-p3{
+background-image: url("../img/box-removebg-preview.png");
+background-repeat: no-repeat;
+width: 101% ;
+height: 356px;
+margin-top: -10%;
+margin-left: -12px;
+}
